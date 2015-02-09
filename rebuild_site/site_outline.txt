@@ -4,4 +4,6 @@
     1.Article
       1.Top Stories
       2.All Updates
-  3.Sidebar
+  3.Popular Games Out Now
+  4.Popular Games Coming Soon
+  5.Community Spotlight
