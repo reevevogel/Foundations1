@@ -2,5 +2,6 @@
   1.Navigation
   2.Section
     1.Article
-      1.Navigation
+      1.Top Stories
+      2.All Updates
   3.Sidebar
