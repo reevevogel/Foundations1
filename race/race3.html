@@ -1,0 +1,73 @@
+<script>
+  var Animal = function(s, f, n) {
+    this.speed = s;
+    this.focus = f;
+    this.name = n;
+    this.position = 0;
+    this.report = function() {
+      return this.name + " is at " + this.position;
+    };
+    this.run = function() {
+      if(this.focus > (Math.random() * 10)) {
+        this.position += this.speed;
+      }
+    };
+  }
+
+  var turtle = new Animal (2, 8, "Franklin"),
+      rabbit = new Animal (8, 2, "Bugs");
+
+  var distance = 80;
+
+  while(turtle.position < distance && rabbit.position < distance) {
+    turtle.run();
+    rabbit.run();
+  }
+
+  console.log(turtle.report());
+  console.log(rabbit.report());
+
+/////////////////////////////////////////////////////////////////
+
+function hypeLoop() {
+  var hype, bet;
+
+  hype = prompt("Ladies and Gentlemen, are you ready for the race of the century? (Yes or No)").toUpperCase();
+
+  while (hype !== "YES") {
+    alert("You are truly missing out. Trust me, you want to witness this race. I'll just ask again...");
+    hype = prompt("Are YOU ready for the race of the century? (Yes or No)").toUpperCase();
+  };
+
+  alert("Fantastic! To the left we have Franklin our slow but dependable tortoise. Over to our right we have Bugs our quick yet distractible hare. Who will win? Who will lose? It's almost time to find out!");
+  bet = prompt("But before we get into the action, why don't you wager a little bet. Who is going to win, Franklin or Bugs?").toUpperCase();
+
+  if (bet === "BUGS") {
+    alert("Ah, a safe pick. Let's find out!")
+    alert("START!");
+  } else {
+    alert("Ah, a bold pick. Let's find out!")
+    alert("START!");
+  }
+
+  if (turtle.position === distance) {
+    alert("...AND THE WINNER IS...")
+    alert("..........");
+    alert("FRANKLIN!")
+  } else {
+    alert("...AND THE WINNER IS...")
+    alert("..........");
+    alert("BUGS!");
+  };
+
+  if (bet == turtle.position === distance || rabbit.position === distance) {
+    alert("Ah, what a victory! Looks like you won, kid!");
+    alert("I didn't disappoint did I? See ya!");
+  } else {
+    alert("Ah, what a victory! Guess that means you lose, kid. Uh, time to pay up!");
+    alert("Hope to see you at our next race! :chuckles:");
+  };
+};
+
+hypeLoop();
+</script>
