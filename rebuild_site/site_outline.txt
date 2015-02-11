@@ -1,9 +1,6 @@
 1.Document
   1.Navigation
-  2.Section
-    1.Article
-      1.Top Stories
-      2.All Updates
-  3.Popular Games Out Now
-  4.Popular Games Coming Soon
-  5.Community Spotlight
+  2.Article
+    1.Start something new.
+      1.When you start with amazing products, you can create amazing things
+  3.Sidebar
